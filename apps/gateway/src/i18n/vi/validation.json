@@ -1,0 +1,148 @@
+{
+  "auth": {
+    "createPassword": {
+      "isNotEmpty": "Vui lòng nhập mật khẩu mới",
+      "isNotEmptyGoogleId": "Yêu cầu không được thực hiện"
+    },
+    "password": {
+      "isString": "Mật khẩu phải là một chuỗi",
+      "isNotEmpty": "Mật khẩu là bắt buộc",
+      "minLength": "Mật khẩu phải có ít nhất {constraints.0} ký tự",
+      "format": "Mật khẩu phải có độ dài từ 6 đến 24 ký tự và chỉ chứa chữ cái và số"
+    },
+    "bioLink": {
+      "isString": "Liên kết bio phải là một chuỗi",
+      "isNotEmpty": "Liên kết bio là bắt buộc",
+      "format": "Liên kết bio chỉ có thể chứa chữ cái thường và số"
+    },
+    "fullName": {
+      "isString": "Họ tên phải là một chuỗi",
+      "isNotEmpty": "Họ tên là bắt buộc"
+    },
+    "email": {
+      "isEmail": "Định dạng email không hợp lệ",
+      "isString": "Email là chuỗi",
+      "isNotEmpty": "Email là bắt buộc"
+    },
+    "oldPassword": {
+      "isString": "Mật khẩu cũ phải là một chuỗi",
+      "isNotEmpty": "Mật khẩu cũ là bắt buộc"
+    },
+    "newPassword": {
+      "isString": "Mật khẩu mới phải là một chuỗi",
+      "isNotEmpty": "Mật khẩu mới là bắt buộc",
+      "format": "Mật khẩu mới phải có độ dài từ 6 đến 24 ký tự và chỉ chứa chữ cái và số"
+    },
+    "refreshToken": {
+      "isString": "Token làm mới phải là một chuỗi",
+      "isNotEmpty": "Token làm mới là bắt buộc"
+    },
+    "updatePasswordToken": {
+      "isString": "Token cập nhật mật khẩu phải là một chuỗi",
+      "isNotEmpty": "Token cập nhật mật khẩu là bắt buộc"
+    },
+    "verifyEmailToken": {
+      "isString": "Token xác minh email phải là một chuỗi",
+      "isNotEmpty": "Token xác minh email là bắt buộc"
+    },
+    "verifyForgotPasswordToken": {
+      "isString": "Token xác minh quên mật khẩu phải là một chuỗi",
+      "isNotEmpty": "Token xác minh quên mật khẩu là bắt buộc"
+    },
+    "user": {
+      "idMissing": "ID người dùng bắt buộc"
+    }
+  },
+  "password": {
+    "isString": "Mật khẩu phải là một chuỗi",
+    "isNotEmpty": "Mật khẩu là bắt buộc",
+    "minLength": "Mật khẩu phải có ít nhất {constraints.0} ký tự",
+    "format": "Mật khẩu phải có độ dài từ 6 đến 24 ký tự và chỉ chứa chữ cái và số"
+  },
+  "bioLink": {
+    "isString": "Liên kết bio phải là một chuỗi",
+    "isNotEmpty": "Liên kết bio là bắt buộc",
+    "format": "Liên kết bio chỉ có thể chứa chữ cái thường và số"
+  },
+  "fullName": {
+    "isString": "Họ tên phải là một chuỗi",
+    "isNotEmpty": "Họ tên là bắt buộc"
+  },
+  "email": {
+    "isEmail": "Định dạng email không hợp lệ",
+    "isNotEmpty": "Email là bắt buộc"
+  },
+  "oldPassword": {
+    "isString": "Mật khẩu cũ phải là một chuỗi",
+    "isNotEmpty": "Mật khẩu cũ là bắt buộc"
+  },
+  "newPassword": {
+    "isString": "Mật khẩu mới phải là một chuỗi",
+    "isNotEmpty": "Mật khẩu mới là bắt buộc",
+    "format": "Mật khẩu mới phải có độ dài từ 6 đến 24 ký tự và chỉ chứa chữ cái và số"
+  },
+  "refreshToken": {
+    "isString": "Token làm mới phải là một chuỗi",
+    "isNotEmpty": "Token làm mới là bắt buộc"
+  },
+  "updatePasswordToken": {
+    "isString": "Token cập nhật mật khẩu phải là một chuỗi",
+    "isNotEmpty": "Token cập nhật mật khẩu là bắt buộc"
+  },
+  "verifyEmailToken": {
+    "isString": "Token xác minh email phải là một chuỗi",
+    "isNotEmpty": "Token xác minh email là bắt buộc"
+  },
+  "verifyForgotPasswordToken": {
+    "isString": "Token xác minh quên mật khẩu phải là một chuỗi",
+    "isNotEmpty": "Token xác minh quên mật khẩu là bắt buộc"
+  },
+  "job": {
+    "name": {
+      "isString": "Tên công việc phải là một chuỗi",
+      "isNotEmpty": "Tên công việc không được để trống"
+    },
+    "code": {
+      "isString": "Mã công việc phải là một chuỗi",
+      "isNotEmpty": "Mã công việc không được để trống",
+      "format": "Mã công việc chỉ được chứa chữ cái in hoa và số"
+    },
+    "price": {
+      "jobId": {
+        "isString": "Mã công việc phải là một chuỗi",
+        "isNotEmpty": "Vui lòng chọn công việc",
+        "isMongoId": "Nghề nghiệp không hợp lệ"
+      },
+      "minPrice": {
+        "isNumber": "Giá bắt đầu phải là một số",
+        "isNotEmpty": "Vui lòng nhập giá bắt đầu",
+        "minValue": "Vui lòng nhập giá lớn hơn 0"
+      },
+      "maxPrice": {
+        "isNumber": "Giá kết thúc phải là một số",
+        "isNotEmpty": "Vui lòng nhập giá kết thúc",
+        "minValue": "Vui lòng nhập giá lớn hơn 0"
+      }
+    }
+  },
+  "upload": {
+    "isNotEmptyImage": "Vui lòng chọn ảnh cần tải lên",
+    "isNotEmptyVideo": "Vui lòng chọn video cần tải lên",
+    "imageLimitSize": "Kích thước tệp không được vượt quá 10MB",
+    "videoLimitsize": "Kích thước video không được vượt quá 100MB",
+    "isAllowTypeImage": "Vui lòng file ảnh định dạng JPEG, PNG, GIF và WEBP",
+    "isAllowTypeVideo": "Vui lòng file video định dạng MP4"
+  },
+  "comment": {
+    "IsNotEmptyRate": "Vui lòng chọn mức đánh giá.",
+    "IsIntRate": "Mức đánh giá phải là số nguyên.",
+    "IsNotEmptyBioLink": "Vui lòng chọn người dùng cần bình luận.",
+    "IsNumberRate": "Mức đánh giá phải là một số.",
+    "MinRate": "Mức đánh giá phải từ 1 trở lên.",
+    "MaxRate": "Mức đánh giá phải nhỏ hơn hoặc bằng 5.",
+    "IsNotEmptyComment": "Vui lòng nhập nội dung bình luận."
+  },
+  "updateCustomer":{
+    "dateOfBirth":"Vui lòng nhập đúng ngày sinh"
+  }
+}

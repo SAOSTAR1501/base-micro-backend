@@ -1,0 +1,21 @@
+{
+    "name": "@bio-backend/customer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "nest build",
+        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+        "start": "nest start",
+        "start:dev": "NODE_ENV=development nest start --watch",
+        "start:prod": "NODE_ENV=production node dist/main",
+        "start:debug": "nest start --debug --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@nestjs/jwt": "^10.2.0",
+        "express": "^4.21.1"
+    }
+}

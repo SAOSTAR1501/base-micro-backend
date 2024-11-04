@@ -1,0 +1,148 @@
+{
+  "auth": {
+    "createPassword": {
+      "isNotEmpty": "Please enter a new password",
+      "isNotEmptyGoogleId": "The request was not fulfilled"
+    },
+    "password": {
+      "isString": "Password must be a string",
+      "isNotEmpty": "Password is required",
+      "minLength": "Password must be at least {constraints.0} characters long",
+      "format": "Password must be 6-24 characters and contain only letters and numbers"
+    },
+    "bioLink": {
+      "isString": "Bio link must be a string",
+      "isNotEmpty": "Bio link is required",
+      "format": "Bio link can only contain lowercase letters and numbers"
+    },
+    "fullName": {
+      "isString": "Full name must be a string",
+      "isNotEmpty": "Full name is required"
+    },
+    "email": {
+      "isEmail": "Invalid email format",
+      "isString": "Email must be a string",
+      "isNotEmpty": "Email is required"
+    },
+    "oldPassword": {
+      "isString": "Old password must be a string",
+      "isNotEmpty": "Old password is required"
+    },
+    "newPassword": {
+      "isString": "New password must be a string",
+      "isNotEmpty": "New password is required",
+      "format": "New password must be 6-24 characters and contain only letters and numbers"
+    },
+    "refreshToken": {
+      "isString": "Refresh token must be a string",
+      "isNotEmpty": "Refresh token is required"
+    },
+    "updatePasswordToken": {
+      "isString": "Update password token must be a string",
+      "isNotEmpty": "Update password token is required"
+    },
+    "verifyEmailToken": {
+      "isString": "Verify email token must be a string",
+      "isNotEmpty": "Verify email token is required"
+    },
+    "verifyForgotPasswordToken": {
+      "isString": "Verify forgot password token must be a string",
+      "isNotEmpty": "Verify forgot password token is required"
+    },
+    "user": {
+      "idMissing": "User ID is missing"
+    }
+  },
+  "password": {
+    "isString": "Password must be a string",
+    "isNotEmpty": "Password is required",
+    "minLength": "Password must be at least {constraints.0} characters long",
+    "format": "Password must be 6-24 characters and contain only letters and numbers"
+  },
+  "bioLink": {
+    "isString": "Bio link must be a string",
+    "isNotEmpty": "Bio link is required",
+    "format": "Bio link can only contain lowercase letters and numbers"
+  },
+  "fullName": {
+    "isString": "Full name must be a string",
+    "isNotEmpty": "Full name is required"
+  },
+  "email": {
+    "isEmail": "Invalid email format",
+    "isNotEmpty": "Email is required"
+  },
+  "oldPassword": {
+    "isString": "Old password must be a string",
+    "isNotEmpty": "Old password is required"
+  },
+  "newPassword": {
+    "isString": "New password must be a string",
+    "isNotEmpty": "New password is required",
+    "format": "New password must be 6-24 characters and contain only letters and numbers"
+  },
+  "refreshToken": {
+    "isString": "Refresh token must be a string",
+    "isNotEmpty": "Refresh token is required"
+  },
+  "updatePasswordToken": {
+    "isString": "Update password token must be a string",
+    "isNotEmpty": "Update password token is required"
+  },
+  "verifyEmailToken": {
+    "isString": "Verify email token must be a string",
+    "isNotEmpty": "Verify email token is required"
+  },
+  "verifyForgotPasswordToken": {
+    "isString": "Verify forgot password token must be a string",
+    "isNotEmpty": "Verify forgot password token is required"
+  },
+  "job": {
+    "name": {
+      "isString": "Job name must be a string",
+      "isNotEmpty": "Job name is required"
+    },
+    "code": {
+      "isString": "Job code must be a string",
+      "isNotEmpty": "Job code is required",
+      "format": "Job code must contain only uppercase letters and numbers"
+    },
+    "price": {
+      "jobId": {
+        "isString": "Job ID must be a string",
+        "isNotEmpty": "Please select a job",
+        "isMongoId": "Invalid profession"
+      },
+      "minPrice": {
+        "isNumber": "Starting price must be a number",
+        "isNotEmpty": "Please enter a starting price",
+        "minValue": "Please enter a price greater than 0"
+      },
+      "maxPrice": {
+        "isNumber": "The ending price must be a number",
+        "isNotEmpty": "Please enter an ending price",
+        "minValue": "Please enter a price greater than 0"
+      }
+    }
+  },
+  "upload": {
+    "isNotEmptyImage": "Please select an image to upload",
+    "isNotEmptyVideo": "Please select a video to upload",
+    "imageLimitSize": "The file size must not exceed 10MB",
+    "videoLimitSize": "The video size must not exceed 100MB",
+    "isAllowTypeImage": "Please upload an image in JPEG, PNG, GIF and WEBP",
+    "isAllowTypeVideo": "Please upload a video in MP4 format"
+  },
+  "comment": {
+    "IsNotEmptyRate": "Please select a rating.",
+    "IsIntRate": "The rating must be an integer.",
+    "IsNotEmptyBioLink": "Please select the user to comment.",
+    "IsNumberRate": "The rating must be a number.",
+    "MinRate": "Rating level must be 1 or more.",
+    "MaxRate": "The rating must be less than or equal to 5.",
+    "IsNotEmptyComment": "Please enter comment content."
+  },
+  "updateCustomer":{
+    "dateOfBirth":"Please enter correct date of birth"
+  }
+}

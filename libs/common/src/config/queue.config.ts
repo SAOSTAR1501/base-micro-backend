@@ -1,0 +1,28 @@
+export const QUEUES = {
+    ADMIN_QUEUE: 'admin_queue',
+    BIO_QUEUE: 'bio_queue',
+    API_GATEWAY_QUEUE: "api_gateway_queue",
+    CUSTOMER_QUEUE: "customer_queue",
+    NOTIFICATION_QUEUE: "notification_queue",
+    COMMENT_QUEUE: "comment_queue",
+    JOB_QUEUE: "job_queue",
+    MEDIA_UPLOAD_QUEUE: 'media_upload_queue',
+    SEARCH_QUEUE: 'search_queue',
+    PAYMENT_QUEUE: 'payment_queue',
+    BOOKING_QUEUE: 'booking_queue',
+    WEBSOCKET_QUEUE: 'websocket_queue'
+};
+
+export const PROVIDERS = {
+    ADMIN_SERVICE: 'ADMIN_SERVICE',
+    BIO_SERVICE: 'BIO_SERVICE',
+    CUSTOMER_SERVICE: 'CUSTOMER_SERVICE',
+    NOTIFICATION_SERVICE: 'NOTIFICATION_SERVICE',
+    COMMENT_SERVICE: 'COMMENT_SERVICE',
+    JOB_SERVICE: 'JOB_SERVICE',
+    MEDIA_UPLOAD_SERVICE: 'MEDIA_UPLOAD_SERVICE',
+    SEARCH_SERVICE: 'SEARCH_SERVICE',
+    PAYMENT_SERVICE: 'PAYMENT_SERVICE',
+    BOOKING_SERVICE: 'BOOKING_SERVICE',
+    WEBSOCKET_SERVICE: 'WEBSOCKET_SERVICE'
+};
