@@ -12,7 +12,6 @@ import { FrontendModule } from './modules/frontend/frontend.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: `.env.${process.env.NODE_ENV}`,
       isGlobal: true,
     }),
     LoggerModule,

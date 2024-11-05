@@ -9,13 +9,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService = app.get(ConfigService);
   const rabbitMqUrl = configService.get<string>('RABBITMQ_URL');
-  const queueName = configService.get<string>('RABBITMQ_QUEUE_NAME');
+  console.log({ rabbitMqUrl });
 
   const microservice = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
     transport: Transport.RMQ,
     options: {
       urls: [rabbitMqUrl],
-      queue: queueName,
+      queue: 'customer_queue',
       queueOptions: {
         durable: true,
       },

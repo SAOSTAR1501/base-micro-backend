@@ -1,3 +1,4 @@
+import { Customer, Rate } from '@app/common';
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
@@ -9,6 +10,7 @@ import * as moment from 'moment';
 import { Model } from 'mongoose';
 import { I18nService } from 'nestjs-i18n';
 import { firstValueFrom } from 'rxjs';
+import { payloadResgiterNoti } from '../../const/payload.const';
 import {
   IForgotPassword,
   ILogin,
@@ -18,9 +20,6 @@ import {
   IUpdateCustomer,
   IUpdatePassword
 } from './auth.interface';
-import { Customer, Rate } from '@app/common';
-import { payloadResgiterNoti } from '../../const/payload.const';
-import { BulkWriteResult } from 'mongodb';
 
 @Injectable()
 export class AuthService {
@@ -59,6 +58,7 @@ export class AuthService {
 
   async login(body: ILogin, lang: string) {
     const { email, password } = body;
+    console.log({ email, password })
     const customer = await this.customerModel.findOne({ email });
     if (!customer) {
       throw new RpcException({
@@ -66,6 +66,7 @@ export class AuthService {
         message: this.i18n.t('error.account_not_registered', { lang }),
       });
     }
+    console.log({ customer })
 
     if (!customer.password) {
       throw new RpcException({
@@ -117,6 +118,7 @@ export class AuthService {
       expiresIn: this.configService.get<string>('CUS_REFRESH_TOKEN_EXPIRES_IN'),
     });
 
+    console.log(1)
     return {
       result: {
         accessToken,

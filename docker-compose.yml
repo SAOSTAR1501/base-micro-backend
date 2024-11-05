@@ -1,30 +1,62 @@
 services:
   rabbitmq:
     image: "rabbitmq:3-management"
-    container_name: "rabbitmq"
+    container_name: "bio-rabbitmq"
     ports:
       - "5672:5672"
       - "15672:15672"
-    healthcheck: 
-      test: ["CMD", "rabbitmq-diagnostics", "check_running"]
-      interval: 10s  
-      timeout: 5s 
+    healthcheck:
+      test: [ "CMD", "rabbitmq-diagnostics", "check_running" ]
+      interval: 10s
+      timeout: 5s
       retries: 5
-      
+
   gateway:
-    build: 
+    build:
       context: .
       dockerfile: ./apps/gateway/Dockerfile
       target: development
-    container_name: "gateway"
+    container_name: "bio-gateway"
     command: pnpm run start:dev gateway
-    env_file:
-      - ./apps/gateway/.env.development
     ports:
       - "8000:8000"
     depends_on:
       rabbitmq:
         condition: service_healthy
+    env_file:
+      - ./apps/gateway/.env
     volumes:
-      - .:/usr/src/app
+      - ./apps/gateway/src:/usr/src/app/apps/gateway/src
       - /usr/src/app/node_modules
+
+  customer:
+    build:
+      context: .
+      dockerfile: ./apps/customer/Dockerfile
+      target: development
+    container_name: "bio-customer"
+    command: pnpm run start:dev customer
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    env_file:
+      - ./apps/customer/.env
+    volumes:
+      - ./apps/customer/src:/usr/src/app/apps/customer/src # Mount thư mục src
+      - /usr/src/app/node_modules # Giữ nguyên thư mục node_modules
+
+  bio:
+    build:
+      context: .
+      dockerfile: ./apps/bio/Dockerfile
+      target: development
+    container_name: "bio-bio"
+    command: pnpm run start:dev bio
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    env_file:
+      - ./apps/bio/.env
+    volumes:
+      - ./apps/bio/src:/usr/src/app/apps/bio/src # Mount thư mục src
+      - /usr/src/app/node_modules # Giữ nguyên thư mục node_modules

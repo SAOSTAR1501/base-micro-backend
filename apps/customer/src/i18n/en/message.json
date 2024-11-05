@@ -1,0 +1,7 @@
+{
+  "checkEmailToVerify": "Please check your email to verify your account.",
+  "checkEmailToResetPass": "Please check your email to reset your password",
+  "verifySuccess": "Account authentication successful",
+  "createPasswordSuccess": "New password created successfully",
+  "updateAccountSuccess": "Account information updated successfully"
+}

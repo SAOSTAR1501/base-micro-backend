@@ -1,0 +1,9 @@
+{
+    "allCustomersRetrieved": "Lấy danh sách khách hàng thành công",
+    "customerRetrieved": "Lấy dữ liệu khách hàng thành công",
+    "customerUpdated": "Cập nhật khách hàng thành công",
+    "customerDeleted": "Xóa khách hàng thành công",
+    "customerBlocked": "Block khách hàng thành công",
+    "customerUnblocked": "Gỡ block khách hàng thành công",
+    "customerNotFound": "Không tìm thấy khách hàng"
+  }

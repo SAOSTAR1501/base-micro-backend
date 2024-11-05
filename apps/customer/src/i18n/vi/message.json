@@ -1,0 +1,7 @@
+{
+  "checkEmailToVerify": "Vui lòng kiểm tra email của bạn để xác minh tài khoản",
+  "checkEmailToResetPass": "Vui lòng kiểm tra email của bạn để đặt lại mật khẩu",
+  "verifySuccess": "Xác thực tài khoản thành công",
+  "createPasswordSuccess": "Tạo mới mật khẩu thành công",
+  "updateAccountSuccess": "Cập nhật thông tin tài khoản thành công"
+}

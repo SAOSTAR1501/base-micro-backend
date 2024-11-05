@@ -9,6 +9,7 @@ export class AuthController {
 
   @MessagePattern('login')
   async login(@Payload() payload: { lang: string } & ILogin) {
+    console.log({ payload })
     const { lang, ...loginDto } = payload;
     return this.authService.login(loginDto, lang);
   }

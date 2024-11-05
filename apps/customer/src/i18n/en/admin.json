@@ -1,0 +1,9 @@
+{
+    "allCustomersRetrieved": "All customers retrieved successfully",
+    "customerRetrieved": "Customer retrieved successfully",
+    "customerUpdated": "Customer updated successfully",
+    "customerDeleted": "Customer deleted successfully",
+    "customerBlocked": "Customer blocked successfully",
+    "customerUnblocked": "Customer unblocked successfully",
+    "customerNotFound": "Customer not found"
+  }

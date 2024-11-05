@@ -12,14 +12,14 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 # Copy mã nguồn vào container
-COPY apps/customer apps/customer
+COPY apps/bio apps/bio
 COPY libs libs
 
-# Cài đặt các gói cho ứng dụng customer
-RUN cd apps/customer && pnpm install
+# Cài đặt các gói cho ứng dụng bio
+# RUN cd apps/bio && pnpm install
 
 # Không cần build ở đây vì chúng ta sẽ chạy ở chế độ dev
-# RUN pnpm run build customer
+# RUN pnpm run build bio
 
 # Chuyển sang bước production (nếu cần)
 FROM node:alpine AS production
@@ -37,4 +37,4 @@ RUN pnpm install --prod
 
 COPY --from=development /usr/src/app/dist ./dist
 
-CMD ["node", "dist/apps/customer/main"]
+CMD ["node", "dist/apps/bio/main"]
