@@ -9,3 +9,4 @@ export * from "./dto";
 export * from "./helper";
 export * from "./utils";
 export * from "./services";
+export * from "./modules";

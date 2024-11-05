@@ -28,6 +28,7 @@ export class FrontendAuthController {
     @ApiBody({ type: LoginDto })
     @Post('login')
     async login(@Body() body: LoginDto, @Req() req: Request) {
+        console.log({ body })
         const lang = getLangFromRequest(req)
         return await firstValueFrom(this.customerAuthService.send('login', { ...body, lang }));
     }

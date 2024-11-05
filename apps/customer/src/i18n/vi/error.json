@@ -1,0 +1,23 @@
+{
+  "account_not_registered": "Tài khoản chưa được đăng ký",
+  "invalid_username_or_password": "Tên đăng nhập hoặc mật khẩu không hợp lệ",
+  "account_not_verified": "Tài khoản chưa được xác minh. Vui lòng kiểm tra email để xác minh",
+  "verification_failed": "Xác minh thất bại",
+  "bio_already_exists": "Bio đã tồn tại",
+  "email_verification_failed": "Xác minh email thất bại",
+  "account_does_not_exist": "Tài khoản không tồn tại",
+  "please_try_again_later": "Vui lòng thử lại sau vài phút",
+  "token_verification_failed": "Xác minh token thất bại",
+  "password_update_failed": "Cập nhật mật khẩu thất bại",
+  "userNotFound": "Không tìm thấy người dùng",
+  "invalid_old_password": "Mật khẩu cũ không hợp lệ",
+  "password_changed_successfully": "Đổi mật khẩu thành công",
+  "password_updated_successfully": "Cập nhật mật khẩu thành công",
+  "token_refresh_failed": "Làm mới token thất bại",
+  "email_already_exists": "Email này đã được đăng ký",
+  "password_not_exist": "Vui lòng thiết lập mật khẩu",
+  "not_found_google_id": "Yêu cầu không được thực hiện",
+  "tokenExpired": "Token đã hết hạn",
+  "newPasswordMatch": "Mật khẩu mới trùng với mật khẩu cũ",
+  "incorrectOldPassword": "Mật khẩu cũ không chính xác vui lòng thử lại"
+}

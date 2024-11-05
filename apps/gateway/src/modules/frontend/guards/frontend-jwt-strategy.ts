@@ -16,7 +16,6 @@ export class CustomerJwtStrategy extends PassportStrategy(Strategy, 'frontend-jw
             secretOrKey: configService.get<string>('CUS_ACCESS_TOKEN_KEY'),
         });
     }
-
     async validate(payload: any) {
         return { userId: payload._id, fullName: payload.fullName, username: payload.username, avatarUrl: payload.avatarUrl };
     }

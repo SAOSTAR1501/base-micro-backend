@@ -1,0 +1,11 @@
+{
+  "getBioSuccess": "Bio information was successfully retrieved.",
+  "bioLinkExists": "Bio link already exists",
+  "exitsPlatform": "Platform names cannot overlap",
+  "exitsGrid": "Grids cannot overlap",
+  "bioNotFound": "Bio does not exist",
+  "updateSuccess": "Updated information successfully",
+  "isErrorUpdate": "An error occurred while updating",
+  "blockBioSuccess": "Blocked bio successfully",
+  "unblockBioSuccess": "Unblocked bio successfully"
+}

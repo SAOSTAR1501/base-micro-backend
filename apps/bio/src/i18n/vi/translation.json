@@ -1,0 +1,11 @@
+{
+  "getBioSuccess": "Lấy thông tin bio thành công",
+  "bioLinkExists": "Bio link đã tồn tại",
+  "exitsPlatform": "Tên nền tảng không được trùng nhau",
+  "exitsGrid": "Grid không được trùng nhau",
+  "bioNotFound": "Bio không tồn tại",
+  "updateSuccess": "Cập nhật thông tin thành công",
+  "isErrorUpdate": "Có lỗi xảy ra khi cập nhật",
+  "blockBioSuccess": "Block bio thành công",
+  "unblockBioSuccess": "Unblock bio thành công"
+}

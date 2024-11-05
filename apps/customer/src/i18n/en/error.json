@@ -1,0 +1,23 @@
+{
+  "account_not_registered": "Account not registered",
+  "invalid_username_or_password": "Invalid username or password",
+  "account_not_verified": "Account not verified. Please check your email to verify",
+  "verification_failed": "Verification failed",
+  "bio_already_exists": "Bio already exists",
+  "email_verification_failed": "Email verification failed",
+  "account_does_not_exist": "Account does not exist",
+  "please_try_again_later": "Please try again in a few minutes",
+  "token_verification_failed": "Token verification failed",
+  "password_update_failed": "Password update failed",
+  "userNotFound": "User not found",
+  "invalid_old_password": "Invalid old password",
+  "password_changed_successfully": "Password changed successfully",
+  "password_updated_successfully": "Password updated successfully",
+  "token_refresh_failed": "Token refresh failed",
+  "email_already_exists": "Email already exists",
+  "password_not_exist": "Please set a password",
+  "not_found_google_id": "The request was not fulfilled",
+  "tokenExpired": "Token expired",
+  "newPasswordMatch": "New password matches old password",
+  "incorrectOldPassword": "The old password is incorrect, please try again"  
+}
